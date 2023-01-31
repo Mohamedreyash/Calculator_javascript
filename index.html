@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+      <div class="container">
+          <h1>Calculator</h1>
+          <table class="table">
+            <tr>
+                <td colspan="4"><input type="text" id="input"></td>
+                <td><input class="btn" type="button" id="clr" value="C" onclick="clr()"></td>
+            </tr>
+            <tr>
+                <td><input class="btn" type="button" id="block1" value="1" onclick="view(1)"></td>
+                <td><input class="btn" type="button" id="block2" value="2" onclick="view(2)"></td>
+                <td><input class="btn" type="button" id="block3" value="3" onclick="view(3)"></td>
+                <td><input class="btn" type="button" id="divide" value="/" onclick="view('/')"></td>
+            </tr>
+            <tr>
+                <td><input class="btn" type="button" id="block4" value="4" onclick="view(4)"></td>
+                <td><input class="btn" type="button" id="block5" value="5" onclick="view(5)"></td>
+                <td><input class="btn" type="button" id="block6" value="6" onclick="view(6)"></td>
+                <td><input class="btn" type="button" id="subtract" value="-" onclick="view('-')"></td>
+            </tr>
+            <tr>
+                <td><input class="btn" type="button" id="block7" value="7" onclick="view(7)"></td>
+                <td><input class="btn" type="button" id="block8" value="8" onclick="view(8)"></td>
+                <td><input class="btn" type="button" id="block9" value="9" onclick="view(9)"></td>
+                <td><input class="btn" type="button" id="addition" value="+" onclick="view('+')"></td>
+            </tr>
+            <tr>
+                <td><input class="btn" type="button" id="." value="." onclick="view('.')"></td>
+                <td><input class="btn" type="button" id="block0" value="0" onclick="view(0)"></td>
+                <td><div id="res"><input class="btn" type="button" id="ans" value="=" onclick="calculate()"></div></td>
+                <td><input class="btn" type="button" id="multiply" value="*" onclick="view('*')"></td>
+            </tr>
+          </table>
+      </div>
+      <script src="index.js"></script>
+</body>
+</html>
